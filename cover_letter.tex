@@ -19,9 +19,13 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\documentclass[12pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
 
-\usepackage{charter} % Use the Charter font for the document text
+% \usepackage{charter} % Use the Charter font for the document text
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Path = fonts/raleway/]{Raleway-Light}
+\setmainfont[Path = fonts/lato/]{Lato-Lig}
 
 %\usepackage{etoolbox} % https://tex.stackexchange.com/questions/377454/undefined-control-sequence-error-on-fancyreset-fncyolh-and-fncyorh-when-u
 
