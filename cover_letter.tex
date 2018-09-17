@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+%\usepackage{etoolbox} % https://tex.stackexchange.com/questions/377454/undefined-control-sequence-error-on-fancyreset-fncyolh-and-fncyorh-when-u
+
+%\makeatletter
+%\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+%\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+%\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+%\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+%\makeatother
+
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newsavebox{\Signature}\sbox{\Signature}{\includegraphics[scale=0.6]{signature.png}}
+\makesignature{PT}{\usebox{\Signature}}
+\signature{\usebox{\Signature}}
+
+\newlfmP{topmarginskip=0pt} % Controls how high the line on the top is
+\newlfmP{bottommarginskip=52pt} % Controls how low the line on the bottom is
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+% \lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Connor Mowry} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+6553 Beacon St. \\ % Address
+Pittsburgh, PA 15217
+}
+
+\phonefrom{(412) 848-4497} % Phone number
+
+\emailfrom{crcmowry@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear [Hiring Manager],} % Greeting text
+\closeline{Sincerely,} % Closing text
+
+% \nameto{Mrs. Jane Smith} % Addressee of the letter above the to address
+
+% \addrto{
+% Recruitment Officer \\ % To address
+% The Corporation \\
+% 123 Pleasant Lane \\
+% City, State 12345
+% }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I am a sophomore pursuing a Bachelor's in Computer Science at Carnegie Mellon. I
+am extremely interested in summer 2019 internship opportunities at [COMPANY]!
+[Indicate what I like about COMPANY].
+
+This past summer, I interned at the Software Engineering Institute at CMU where
+I was a full-stack web developer. I created a web application to simplify
+securing IoT devices. I learned many technologies on the fly including Play
+Framework, PostgreSQL, and Bootstrap. I have a strong breadth of experience,
+from multiple summers of development to conducting robotics research.
+
+From my resume, you can see that I have excelled academically at CMU. I have not
+shied away from rigorous technical classes and have wanted to delve deeper into
+interesting topics. I took a supplementary course in CS theory in addition to
+Great Theoretical Ideas in Computer Science (15-251), and I am currently taking
+a student taught elective on type theory. I have a strong sense of curiosity and
+I am always trying to learn more.
+
+I would be very interested to discuss my potential to contribute to
+[COMPANY]! Feel free to contact me by email or by phone, which can be
+found at the top of this letter. Thank you for your time and consideration. I
+hope to be in touch soon!
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
